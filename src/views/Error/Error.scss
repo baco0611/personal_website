@@ -1,0 +1,26 @@
+@import "../../variable.scss";
+
+.error {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+
+    img {
+        width: min(100%, 450px);
+    }
+
+    p {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.6;
+
+        a {
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+}
