@@ -20,25 +20,29 @@ export default function About() {
                     <div className='archive'>
                         <div className='box'>
                             <table>
-                                <tr>
-                                    <th colspan="2">Education</th>
-                                </tr>
-                                <tr>
-                                    <td>School:</td>
-                                    <td>Hue University of Sciences</td>
-                                </tr>
-                                <tr>
-                                    <td>Major:</td>
-                                    <td>Computer Science</td>
-                                </tr>
-                                <tr>
-                                    <td>GPA:</td>
-                                    <td>3.76 / 4.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Graduated:</td>
-                                    <td>June 2024</td>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th colSpan="2">Education</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>School:</td>
+                                        <td>Hue University of Sciences</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Major:</td>
+                                        <td>Computer Science</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPA:</td>
+                                        <td>3.76 / 4.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graduated:</td>
+                                        <td>June 2024</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
