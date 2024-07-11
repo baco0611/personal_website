@@ -1,0 +1,64 @@
+@import "../../variable.scss";
+
+.experience-content .block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .time {
+        width: 30%;
+        font-weight: 700;
+        color: $primary-color;
+        font-size: 16px;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 10px;
+    }
+    
+    .content {
+        width: 70%;
+        padding-left: 35px;
+        border-left: 2px dashed $highlight-color;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        
+        .position {
+            padding-bottom: 15px;
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                padding-bottom: 10px;
+            }
+        }
+
+        h1 {
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        ul {
+            width: 100%;
+        }
+        
+        li {
+            list-style: circle;
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+            padding-bottom: 10px;
+        }
+    }
+}
