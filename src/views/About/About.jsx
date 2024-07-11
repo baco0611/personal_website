@@ -45,6 +45,33 @@ export default function About() {
                                 </tbody>
                             </table>
                         </div>
+                        <div className='box'>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colSpan="2">Skill</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Language:</td>
+                                        <td>Javascript (proficient), Python (proficient), C/C++ (intermediate), Java (intermediate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artificial Intelligence:</td>
+                                        <td>Keras, TensorFlow, OpenCV, NLTK, Underthesea</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web & Database</td>
+                                        <td>HTML, CSS, ReactJs, Restful API, SQL, MS SQL Server, MySQL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Technical Skills:</td>
+                                        <td>Machine Learning Model Training, Front-end Development, Web design</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
