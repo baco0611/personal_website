@@ -1,1 +1,78 @@
 @import "../../variable.scss";
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    .avatar {
+        width: 25%;
+
+        img {
+            width: 100%;
+            border-radius: 100%;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .content {
+        width: 70%;
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            padding-bottom: 18px;
+            text-align: justify;
+
+            span {
+                color: $highlight-color;
+                font-weight: 600;
+                font-style: italic;
+            }
+        }
+
+        .archive {
+            width: 100%;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .box {
+                width: 80%;
+                padding: 10px;
+                color: black;
+                
+                table {
+                    width: 100%;
+                    border: dashed 1.5px $primary-color;
+                    border-collapse: collapse;
+                    border-left: none;
+                    border-right: none;
+
+                    th {
+                        text-align: center;
+                    }
+
+                    th, td {
+                        padding: 7px;
+                        border: dashed 1.5px $primary-color;
+                        border-left: none;
+                        border-right: none;
+                    }
+
+                    tr td:nth-child(1) {
+                        text-align: right;
+                        width: 35%;
+                        font-weight: 600;
+                    }
+
+                    tr td:nth-child(2) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

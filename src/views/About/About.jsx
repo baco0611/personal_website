@@ -1,4 +1,6 @@
 import React from 'react'
+import "./About.scss"
+import avatar from "./img/avatar.jpg"
 
 export default function About() {
     return (
@@ -6,6 +8,41 @@ export default function About() {
             <div className='section-title'>
                 <div className='background'></div>
                 <h1>about</h1>
+            </div>
+            <div className='about-content'>
+                <div className='avatar'>
+                    <img src={avatar}/>
+                </div>
+                <div className='content'>
+                    <p>Heya!!! My name is <span>Bao Huynh Van Nguyen</span> and you can call me Bao.</p>
+                    <p>I graduated in June 2024 with a degree in <span>Computer Science</span> from Hue University of Sciences (HUSC) in just three years. My goal is to become an <span>AI engineer specializing in computer vision</span> to enhance products like websites and apps.</p>
+                    <p>Currently, I am an AI intern at Sky-Field Corporation, where I focus on digital transformation (DX) in construction and learn about automatic image generation models for design applications.</p>
+                    <div className='archive'>
+                        <div className='box'>
+                            <table>
+                                <tr>
+                                    <th colspan="2">Education</th>
+                                </tr>
+                                <tr>
+                                    <td>School:</td>
+                                    <td>Hue University of Sciences</td>
+                                </tr>
+                                <tr>
+                                    <td>Major:</td>
+                                    <td>Computer Science</td>
+                                </tr>
+                                <tr>
+                                    <td>GPA:</td>
+                                    <td>3.76 / 4.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduated:</td>
+                                    <td>June 2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

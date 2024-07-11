@@ -23,13 +23,11 @@ export default function MenuBar() {
     }
 
     const [activeNav, setActiveNav] = useState('#');
-    console.log(activeNav)
 
     useEffect(() => {
         const handleScroll = () => {
             const about = document.querySelector('#about');
             const skill = document.querySelector('#skill');
-            console.log(about.getBoundingClientRect().top)
 
             if (skill.getBoundingClientRect().top <= window.innerHeight/2) {
                 setActiveNav('skill');
@@ -72,8 +70,30 @@ export default function MenuBar() {
                 }}
                 className={clsx({ active: activeNav === 'skill'})}
             >skill</Link>
-            <Link to={"#portfolio"}>portfolio</Link>
-            <Link to={"#contact"}>contact</Link>
+            <Link 
+                to={"#experience"}
+                onClick={(e) => {
+                    e.preventDefault()
+                    smoothScroll("experience")
+                }}
+                className={clsx({ active: activeNav === 'experience'})}
+            >experience</Link>
+            <Link 
+                to={"#portfolio"}
+                onClick={(e) => {
+                    e.preventDefault()
+                    smoothScroll("portfolio")
+                }}
+                className={clsx({ active: activeNav === 'portfolio'})}
+            >portfolio</Link>
+            <Link 
+                to={"#contact"}
+                onClick={(e) => {
+                    e.preventDefault()
+                    smoothScroll("contact")
+                }}
+                className={clsx({ active: activeNav === 'contact'})}
+            >contact</Link>
         </div>
     )
 }
