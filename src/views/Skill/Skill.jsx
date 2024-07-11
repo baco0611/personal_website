@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function About() {
+export default function Skill() {
     return (
-        <div className='section' id='about'>
+        <div className='section' id='skill'>
             <div className='section-title'>
                 <div className='background'></div>
-                <h1>about</h1>
+                <h1>skill</h1>
             </div>
         </div>
     )

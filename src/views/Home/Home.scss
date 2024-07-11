@@ -2,12 +2,12 @@
 
 .home-section {
     position: relative;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
 
     .home-background {
         position: absolute;
-        width: 420px;
-        height: 420px;
+        width: 440px;
+        height: 440px;
         background-color: $base-color;
         z-index: 0;
         border-radius: 100%;
@@ -31,15 +31,15 @@
             padding-top: 30px;
 
             h1 {
-                font-size: 149px;
+                font-size: 160px;
                 font-weight:900;
             }
 
             h2 {
-                font-size: 65px;
+                font-size: 70px;
                 font-weight:800;
                 color: $primary-color;
-                letter-spacing: 12px;
+                letter-spacing: 8px;
             }
 
             &.column {
@@ -49,7 +49,7 @@
         }
 
         .home-navigate {
-            padding-top: 25px;
+            padding-top: 35px;
             display: flex;
             align-items: center;
             gap: 40px;

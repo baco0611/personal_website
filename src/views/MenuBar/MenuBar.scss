@@ -18,6 +18,13 @@
         font-size: 20px;
         color: black;
         font-weight: 500;
+        // transition: all ease-in 0.5s;
+
+        &.active {
+            color: $highlight-color;
+            font-weight: 700;
+            text-decoration: underline 2px solid $highlight-color;
+        }
 
         &:hover {
             color: $primary-color;

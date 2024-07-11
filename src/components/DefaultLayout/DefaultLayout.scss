@@ -1,7 +1,7 @@
 .default{
     &-layout {
         padding-top: 8%;
-        width: min(1400px, 70%);
+        width: min(1400px, 80%);
         margin: 0 auto;
         display: flex;
         gap: 5%;
@@ -14,7 +14,8 @@
     }
 
     &-right {
-        margin-left: 20%;
+        margin-left: 15%;
+        padding-left: 10%;
         width: 80%;
     }
 }

@@ -11,11 +11,11 @@ export default function Home() {
       }, []);
 
     return (
-        <div className='home-section'>
+        <div className='home-section' id='home'>
             <div className='home-background' data-aos="fade-in"></div>
             <div className='home-content'>
                 <div className='home-content-top'>
-                    <p data-aos="fade-down">bao huynh is a</p>
+                    <p data-aos="fade-down">bao huynh is an</p>
                 </div>
                 <div className='home-content-main'>
                     <h2 data-aos="fade-left">AI</h2>
