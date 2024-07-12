@@ -105,7 +105,7 @@ export default function Experience() {
 
                                 {
                                     company.position.map((position, index) => 
-                                        <div className='position' key={index} data-aos="fade-left">
+                                        <div className='position' key={index}>
                                             <div className='title'>
                                                 <h2>{position.position}</h2>
                                                 <h2>{position.time}</h2>

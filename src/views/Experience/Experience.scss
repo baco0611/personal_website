@@ -13,6 +13,22 @@
         text-align: right;
         padding-right: 15px;
         padding-top: 10px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: solid 5px $highlight-color;
+            border-radius: 100%;
+
+            top:50%;
+            right: 0;
+            transform: translate(56%, -20%);
+        }
     }
     
     .content {
