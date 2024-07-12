@@ -1,8 +1,7 @@
-# React + Vite
+# Bao Huynh Resume Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi there,
 
-Currently, two official plugins are available:
+Welcome to my resume website! I built this site using React, a powerful JavaScript library for building user interfaces. React's component-based architecture allowed me to create a modular and maintainable codebase, making it easy to update and expand my resume over time. By leveraging React's state management and hooks, I was able to implement dynamic features and ensure a smooth and responsive user experience. This project has been a fantastic opportunity to showcase not only my skills and experiences but also my proficiency in modern web development techniques.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
