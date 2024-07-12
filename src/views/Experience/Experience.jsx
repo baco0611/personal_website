@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Experience.scss"
-import { child } from 'fontawesome'
+import Aos from 'aos';
+import "aos/dist/aos.css"
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 export default function Experience() {
+    
     const experience = [
         {
             time: "Mar 2024 - present",
@@ -79,26 +82,30 @@ export default function Experience() {
         },
     ]
 
+    useEffect(() => {
+        Aos.init({
+          duration: 1200, // Đặt thời gian cho hiệu ứng
+        });
+    }, []);
 
     return (
         <div className='section' id='experience'>
-            <div className='section-title'>
-                <div className='background'></div>
-                <h1>experience</h1>
-            </div>
+            <SectionHeader
+                section_name="experience"
+            />
             <div className='experience-content'>
             {
                 experience.map((company, index) => {
                     return (
                         <div className='block' key={index}>
-                            <div className='time'>{company.time}</div>
-                            <div className='content'>
+                            <div className='time' data-aos="fade-right">{company.time}</div>
+                            <div className='content' data-aos="fade-left">
                                 <h1>{company.company_name}</h1>
                                 <p>{company.location}</p>
 
                                 {
                                     company.position.map((position, index) => 
-                                        <div className='position' key={index}>
+                                        <div className='position' key={index} data-aos="fade-left">
                                             <div className='title'>
                                                 <h2>{position.position}</h2>
                                                 <h2>{position.time}</h2>

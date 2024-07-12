@@ -3,9 +3,16 @@ import "./MenuBar.scss"
 import Logo from "./img/Logo.png" 
 import { Link } from 'react-router-dom'
 import clsx from 'clsx'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 export default function MenuBar() {
-    
+    useEffect(() => {
+        Aos.init({
+          duration: 1200, // Đặt thời gian cho hiệu ứng
+        });
+    }, []);
+
     const smoothScroll = (targetId) => {
         if(targetId != "#") {
             const target = document.getElementById(targetId);
@@ -50,7 +57,7 @@ export default function MenuBar() {
     }, []);
 
     return (
-        <div className='menu-bar'>
+        <div className='menu-bar' data-aos="fade-right">
             <Link 
                 to={"#"}
                 onClick={(e) => {

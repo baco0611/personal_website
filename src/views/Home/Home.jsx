@@ -8,7 +8,7 @@ export default function Home() {
         Aos.init({
           duration: 1200, // Đặt thời gian cho hiệu ứng
         });
-      }, []);
+    }, []);
 
     return (
         <div className='home-section' id='home'>

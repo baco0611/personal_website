@@ -1,24 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./About.scss"
 import avatar from "./img/avatar.jpg"
+import Aos from 'aos';
+import "aos/dist/aos.css"
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 export default function About() {
+    useEffect(() => {
+        Aos.init({
+          duration: 1200, // Đặt thời gian cho hiệu ứng
+        });
+    }, []);
+
     return (
         <div className='section' id='about'>
-            <div className='section-title'>
-                <div className='background'></div>
-                <h1>about</h1>
-            </div>
+            <SectionHeader
+                section_name = "about"
+            />
             <div className='about-content'>
-                <div className='avatar'>
+                <div className='avatar' data-aos="fade-right">
                     <img src={avatar}/>
                 </div>
                 <div className='content'>
-                    <p>Heya!!! My name is <span>Bao Huynh Van Nguyen</span> and you can call me Bao.</p>
-                    <p>I graduated in June 2024 with a degree in <span>Computer Science</span> from Hue University of Sciences (HUSC) in just three years. My goal is to become an <span>AI engineer specializing in computer vision</span> to enhance products like websites and apps.</p>
-                    <p>Currently, I am an AI intern at Sky-Field Corporation, where I focus on digital transformation (DX) in construction and learn about automatic image generation models for design applications.</p>
+                    <p data-aos="fade-left">Heya!!! My name is <span>Bao Huynh Van Nguyen</span> and you can call me Bao.</p>
+                    <p data-aos="fade-left">I graduated in June 2024 with a degree in <span>Computer Science</span> from Hue University of Sciences (HUSC) in just three years. My goal is to become an <span>AI engineer specializing in computer vision</span> to enhance products like websites and apps.</p>
+                    <p data-aos="fade-left">Currently, I am an AI intern at Sky-Field Corporation, where I focus on digital transformation (DX) in construction and learn about automatic image generation models for design applications.</p>
                     <div className='archive'>
-                        <div className='box'>
+                        <div className='box' data-aos="fade-up">
                             <table>
                                 <thead>
                                     <tr>
@@ -45,7 +53,7 @@ export default function About() {
                                 </tbody>
                             </table>
                         </div>
-                        <div className='box'>
+                        <div className='box' data-aos="fade-up">
                             <table>
                                 <thead>
                                     <tr>
