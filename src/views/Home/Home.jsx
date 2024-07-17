@@ -50,7 +50,7 @@ export default function Home() {
                             data-aos="fade-up"
                             data-aos-once="true"
                         >
-                            <a href='./file/bao_huynh_resume.pdf' download="Bao_Huynh_resume.pdf">my resume</a>
+                            <a href='/bao_huynh_resume.pdf' download="Bao_Huynh_resume.pdf">my resume</a>
                             <a href='#contact'>let's connect</a>
                         </div>
                         <div 
