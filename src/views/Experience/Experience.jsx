@@ -36,8 +36,16 @@ export default function Experience() {
                 experience.map((company, index) => {
                     return (
                         <div className='block' key={index}>
-                            <div className='time' data-aos="fade-right">{company.time}</div>
-                            <div className='content' data-aos="fade-left">
+                            <div 
+                                className='time' 
+                                data-aos="fade-right" 
+                                data-aos-once="true"
+                            >{company.time}</div>
+                            <div 
+                                className='content' 
+                                data-aos="fade-left"
+                                data-aos-once="true"
+                            >
                                 <h1>{company.company_name}</h1>
                                 <p>{company.location}</p>
 

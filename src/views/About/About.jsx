@@ -18,15 +18,32 @@ export default function About() {
                 section_name = "about"
             />
             <div className='about-content'>
-                <div className='avatar' data-aos="fade-right">
+                <div 
+                    className='avatar' 
+                    data-aos="fade-right"
+                    data-aos-once="true"
+                >
                     <img src={avatar}/>
                 </div>
                 <div className='content'>
-                    <p data-aos="fade-left">Heya!!! My name is <span>Bao Huynh Van Nguyen</span> and you can call me Bao.</p>
-                    <p data-aos="fade-left">I graduated in June 2024 with a degree in <span>Computer Science</span> from Hue University of Sciences (HUSC) in just three years. My goal is to become an <span>AI engineer specializing in computer vision</span> to enhance products like websites and apps.</p>
-                    <p data-aos="fade-left">Currently, I am an AI intern at Sky-Field Corporation, where I focus on digital transformation (DX) in construction and learn about automatic image generation models for design applications.</p>
+                    <p 
+                        data-aos="fade-left"
+                        data-aos-once="true"    
+                    >Heya!!! My name is <span>Bao Huynh Van Nguyen</span> and you can call me Bao.</p>
+                    <p 
+                        data-aos="fade-left"
+                        data-aos-once="true"    
+                    >I graduated in June 2024 with a degree in <span>Computer Science</span> from Hue University of Sciences (HUSC) in just three years. My goal is to become an <span>AI engineer specializing in computer vision</span> to enhance products like websites and apps.</p>
+                    <p 
+                        data-aos="fade-left"
+                        data-aos-once="true"    
+                    >Currently, I am an AI intern at Sky-Field Corporation, where I focus on digital transformation (DX) in construction and learn about automatic image generation models for design applications.</p>
                     <div className='archive'>
-                        <div className='box' data-aos="fade-up">
+                        <div 
+                            className='box' 
+                            data-aos="fade-up"
+                            data-aos-once="true"
+                        >
                             <table>
                                 <thead>
                                     <tr>
@@ -53,7 +70,11 @@ export default function About() {
                                 </tbody>
                             </table>
                         </div>
-                        <div className='box' data-aos="fade-up">
+                        <div 
+                            className='box' 
+                            data-aos="fade-up"
+                            data-aos-once="true"
+                        >
                             <table>
                                 <thead>
                                     <tr>

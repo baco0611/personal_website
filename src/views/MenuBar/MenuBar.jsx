@@ -57,7 +57,11 @@ export default function MenuBar() {
     }, []);
 
     return (
-        <div className='menu-bar' data-aos="fade-right">
+        <div 
+            className='menu-bar' 
+            data-aos="fade-right"
+            data-aos-once="true"
+        >
             <Link 
                 to={"#"}
                 onClick={(e) => {
