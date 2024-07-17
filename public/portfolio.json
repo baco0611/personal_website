@@ -1,0 +1,44 @@
+{
+    "portfolio": [
+        {
+            "title": "Feature representations for image classification research",
+            "thumbnail":"classification",
+            "technology":"Keras, OpenCV, Sklearn",
+            "content":"Conducting research on methods for extracting local and global features of images, with in-depth studies on the SIFT method, BoVW model, and VGG network.\nObjectively comparing these methods using datasets of cats and dogs as well as sign language on various image transformation criteria. Results show that the VGG model performs well with large datasets, while SIFT excels with spatial transformations.",
+            "github":"https://github.com/baco0611/Graduation_Project",
+            "demo": ""
+        },
+        {
+            "title": "Kanji Classification Model",
+            "thumbnail":"",
+            "technology":"Keras, OpenCV, Sklearn",
+            "content":"Successfully training a model to recognize 46 kanji characters at the N5 level using a handwritten kanji dataset collected from 5 individuals, achieving an accuracy of 90%.\nObjectively comparing the performance between classification models including kNN, SVM, and the PCA dimensionality reduction method in improving the model.",
+            "github":"",
+            "demo": ""
+        },
+        {
+            "title": "UEH University Orientation Festival Website",
+            "thumbnail":"",
+            "technology":"React.js, Laravel, Canvas, Animation.css, Sweetaleart, Sass, Axios",
+            "content":"Programming a media website for the UEH University event, achieving over 4000 visits within one month. Utilizing REST API and one-way encryption for login, event registration, and online media activities.",
+            "github":"",
+            "demo": ""
+        },
+        {
+            "title": "Akagoe Product Introduction Website",
+            "thumbnail":"",
+            "technology":"React.js, Laravel, Animation.css, Sweetaleart, Sass, Axios",
+            "content":"Front-end and Back-end communicate with each other through JSON files to exchange data to reuse the interface.\nProficient in using React library after 1 month of studying and building a website including 3 parts: project introduction, product introduction and online sales page.",
+            "github":"https://github.com/baco0611/AKAGOE_FULLSTACK",
+            "demo": ""
+        },
+        {
+            "title": "HUSC – THE RISE",
+            "thumbnail":"",
+            "technology":"HTML, CSS, JS, Canvas",
+            "content":"This project was made to participate in the web-based newspaper-making contest with the theme \"Celebrating the 65th anniversary of the founding of the school\" in the native panel.\nThis project was made when I just learned basic web programming in school so there wasn't much technology in it.\nHandling page scroll and basic effects to help visually interface the website.\nImplementing the function of loading student cards (customer by user) with Canvas.",
+            "github":"https://github.com/baco0611/HUSC-65Ys",
+            "demo": ""
+        }
+    ]
+}
