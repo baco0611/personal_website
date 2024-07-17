@@ -42,6 +42,8 @@ export default function Portfolio() {
                             key={index}
                             title='Click to read more details.'
                             onClick={() => setElementActive(index)}
+                            data-aos="fade-up"
+                            data-aos-once="true"
                         >
                             <img
                                 src={image[project.thumbnail] || image.error}
