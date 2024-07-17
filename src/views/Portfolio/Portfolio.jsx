@@ -11,7 +11,7 @@ import clsx from 'clsx'
 export default function Portfolio() {
     useEffect(() => {
         Aos.init({
-          duration: 1200, // Đặt thời gian cho hiệu ứng
+          duration: 150, // Đặt thời gian cho hiệu ứng
         });
     }, []);
 

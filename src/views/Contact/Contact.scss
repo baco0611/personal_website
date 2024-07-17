@@ -1,0 +1,77 @@
+@import "../../variable.scss";
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+    .left {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        
+        .block {
+            width: 100%;
+            height: 60px;
+            background-color: $base-color;
+            border-radius: 15px;
+
+            &:hover {
+                background-color: $highlight-color;
+    
+                a {
+                    color: white;
+                }
+            }
+            
+            a {
+                font-size: 18px;
+                color: $primary-color;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+
+                i {
+                    padding-right: 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .right{
+        width: 55%;
+
+        form {
+            width: 100%;
+
+            h1 {
+                color: $primary-color;
+                font-size: 30px;
+                padding-bottom: 15px;
+            }
+
+            .input-box {
+                padding-bottom: 15px;
+            }
+            
+            .field {
+                width: 100%;
+                height: 40px;
+                border: 1.5px solid $highlight-color;
+                border-radius: 10px;
+                padding: 10px;
+
+                &.message {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
