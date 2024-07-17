@@ -114,3 +114,117 @@
         }
     }
 }
+
+.hidden-portfolio {
+    .hidden-wrap {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 46, 124, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+        transition: all ease-in-out 950ms;
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+
+        &.none {
+            transform: translateY(-100vh);
+            visibility: hidden !important;
+            opacity: 0;
+        }
+    }
+
+    .hidden-content {
+        width: min(60%, 750px);
+        // aspect-ratio: 4/2.5;
+        background-color: white;
+        border-radius: 40px;
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+
+        .close-button {
+            position: absolute;
+            color: $base-color;
+            font-size: 25px;
+            top: 30px;
+            right: 40px;
+            
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+
+        img {
+            border-radius: 20px;
+            width: 65%;
+        }
+
+        h1, p {
+            color: $primary-color;
+        }
+
+        p {
+            font-weight: 600;
+        }
+
+        li {
+            list-style: circle;
+            padding: 15px;
+            text-align: justify;
+            color: $primary-color;
+            line-height: 1.4;
+        }
+
+        .button {
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+
+            button {
+                display: block;
+                width: 35%;
+                padding: 5px;
+                background-color: transparent;
+                border: 2.5px solid $primary-color;
+                border-radius: 10px;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: $primary-color;
+                    font-size: 16px;
+                }
+
+                &:disabled, &.disable-link {
+                    cursor: not-allowed;
+                    opacity: 0.5;
+                    pointer-events: none;
+                }
+
+                &:hover {
+                    background-color: $highlight-color;
+                    border: 2.5px solid $highlight-color;
+                    
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
