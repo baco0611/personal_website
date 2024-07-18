@@ -3,6 +3,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import SectionHeader from '../SectionHeader/SectionHeader'
 import "./Contact.scss"
 import clsx from 'clsx'
+import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export default function Contact() {
     useEffect(() => {
@@ -81,6 +84,54 @@ export default function Contact() {
         return true
     }
 
+    const resetForm = () => {
+        const contactForm = form.current
+        const inputBlock = contactForm.querySelectorAll(".input-box")
+        
+        inputBlock.forEach(element => {
+            const errorElement = element.querySelector(".error-message")
+
+            element.classList.remove("invalid")
+            errorElement.innerHTML = ""         
+        });
+
+        setMessage({
+            name: "",
+            email: "",
+            message: ""
+        })
+    }
+
+    const sendEmail = () => {
+        emailjs
+            .sendForm('service_hvrhrg4', 'template_6fawlae', form.current, {
+                publicKey: 'jh6B_-WsdkHcf5mbe',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    resetForm()
+                    Swal.fire({
+                        icon: "success",
+                        title: "Done",
+                        text: "Your message has been sent",
+                        confirmButtonColor: "#137ffd",
+                        confirmButtonText: "Got it!!!"
+                    });
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Something went wrong!",
+                        confirmButtonColor: "#137ffd",
+                        confirmButtonText: "Got it!!!"
+                    });
+                },
+            );
+    };
+
     const handelSubmit = e => {
         e.preventDefault()
         const name = checkValid("name")
@@ -88,7 +139,7 @@ export default function Contact() {
         const message = checkValid("message")
 
         if(name && email && message) {
-            console.log("push")
+            sendEmail()
         }
     }
 
@@ -109,7 +160,7 @@ export default function Contact() {
                         <a href="https://www.linkedin.com/in/bao-huynhvannguyen/" target='_blank'><i className="fa-brands fa-linkedin-in"></i> Bao Huynh Van Nguyen</a>
                     </div>
                 </div>
-                <div className='right'>
+                <div className='right' data-aos="fade-left" data-aos-once="true">
                     <form ref={form}>
                         <h1>Contact with me</h1>
                         <div className='input-box'>
@@ -118,6 +169,7 @@ export default function Contact() {
                                 type='text' 
                                 className='field' 
                                 placeholder='Your name' 
+                                name='form-name'
                                 required
                                 value={message.name}
                                 onChange={(e) => onChangeValue(e, "name")}
@@ -133,6 +185,7 @@ export default function Contact() {
                                 type='text' 
                                 className='field' 
                                 placeholder='Your email' 
+                                name='form-email'
                                 required
                                 value={message.email}
                                 onChange={(e) => onChangeValue(e, "email")}
@@ -140,7 +193,7 @@ export default function Contact() {
                                 onBlur={() => checkValid("email")}
                             >
                             </input>
-                            <p className='error-message'>hê hê sai kìa</p>
+                            <p className='error-message'></p>
                         </div>
                         <div className='input-box'>
                             <textarea 
@@ -148,6 +201,7 @@ export default function Contact() {
                                 type='text' 
                                 className='field message' 
                                 placeholder='Your message' 
+                                name='form-message'
                                 required
                                 value={message.message}
                                 onChange={(e) => onChangeValue(e, "message")}

@@ -107,15 +107,6 @@
                         color: white;
                         border: 1.5px white solid;
                     }
-                    
-                    &.disable {
-                        background-color: transparent !important;
-                        color: $highlight-color !important;
-                        border: 1.5px $highlight-color solid !important;
-                        opacity: 0.5 !important;
-                        pointer-events: none;
-                        cursor: not-allowed;
-                    }
                 }
             }
         }
