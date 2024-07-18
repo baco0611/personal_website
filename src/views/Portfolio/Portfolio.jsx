@@ -27,6 +27,32 @@ export default function Portfolio() {
         })
     },[])
 
+    const getFatherElement = (element, fatherClass) => {
+        while (element && element !== document.body) {
+            if (element.classList.contains(fatherClass)) {
+                return element;
+            }
+            element = element.parentElement;
+        }
+        return null
+    }
+
+    const handleOpenElement = (e, index) => {
+        const element = e.target
+        const fatherElement = getFatherElement(element, "button")
+
+        if(!fatherElement)
+            setElementActive(index)
+    }
+
+    const handleCloseHidden = e => {
+        const element = e.target
+        const fatherElement = getFatherElement(element, "hidden-content")
+
+        if(!fatherElement)
+            setElementActive(-1)
+    }
+
     return (
         <div className='section' id='portfolio'>
             <SectionHeader
@@ -40,7 +66,7 @@ export default function Portfolio() {
                             className="element cursorPointer" 
                             key={index}
                             title='Click to read more details.'
-                            onClick={() => setElementActive(index)}
+                            onClick={(e) => handleOpenElement(e, index)}
                             data-aos="fade-up"
                             data-aos-once="true"
                         >
@@ -75,16 +101,19 @@ export default function Portfolio() {
             }
             </div>
             <div className='hidden-portfolio'>
-                <div className={clsx("hidden-wrap", {
-                    "none": elementActive == -1
-                })}>
+                <div 
+                    className={clsx("hidden-wrap", {
+                        "none": elementActive == -1
+                    })}
+                    onClick={handleCloseHidden}
+                >
                 {
                     portfolioList.map((project, index) => {
                         if(index == elementActive)
                             return (
                                 <div className='hidden-content' key={index}>
                                     <i 
-                                        class="fa-solid fa-square-xmark close-button cursorPointer"
+                                        className="fa-solid fa-square-xmark close-button cursorPointer"
                                         onClick={() => setElementActive(-1)}
                                     ></i>
                                     <img
