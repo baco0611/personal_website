@@ -35,7 +35,6 @@ export default function Portfolio() {
             <div className='portfolio'>
             {
                 portfolioList.map((project, index) => {
-                    console.log(project.content.split("\n"))
                     return (
                         <div 
                             className="element cursorPointer" 
