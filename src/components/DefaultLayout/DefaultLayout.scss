@@ -4,18 +4,36 @@
         width: min(1400px, 90%);
         margin: 0 auto;
         display: flex;
-        gap: 5%;
+        gap: 3%;
         position: relative;
     }
 
     &-left {
-        width: 15%;
-        position: fixed;
+        width: 18%;
     }
 
     &-right {
-        margin-left: 15%;
-        padding-left: 10%;
-        width: 80%;
+        width: 77%;
+    }
+}
+
+
+@media screen and ( max-width: 900px ) {
+    .default {
+        &-layout {
+            padding-top: 0px;
+            display: block;
+            width: 100%;
+        }
+
+        &-left {
+            padding-top: 95px;
+            width: 100%;
+        }
+
+        &-right {
+            width: min(1400px, 90%);
+            margin: 0 auto;
+        }
     }
 }

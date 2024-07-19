@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./MenuBar.scss"
 import Logo from "./img/Logo.png" 
+import LogoW from "./img/Logo_white.png" 
 import { Link } from 'react-router-dom'
 import clsx from 'clsx'
 import Aos from 'aos';
@@ -57,52 +58,101 @@ export default function MenuBar() {
     }, []);
 
     return (
-        <div 
-            className='menu-bar' 
-            data-aos="fade-right"
-            data-aos-once="true"
-        >
-            <Link 
-                to={"#"}
-                onClick={(e) => {
-                    e.preventDefault()
-                    smoothScroll("#")
-                }}
+        <>
+            <div 
+                className='menu-bar' 
+                data-aos="fade-right"
+                data-aos-once="true"
             >
-                <img id='logo' src={Logo}/>
-            </Link>
-            <Link 
-                to={"#about"}
-                onClick={(e) => {
-                    e.preventDefault()
-                    smoothScroll("about")
-                }}
-                className={clsx({"active": activeNav === "about"})}
-            >about</Link>
-            <Link 
-                to={"#experience"}
-                onClick={(e) => {
-                    e.preventDefault()
-                    smoothScroll("experience")
-                }}
-                className={clsx({ active: activeNav === 'experience'})}
-            >experience</Link>
-            <Link 
-                to={"#portfolio"}
-                onClick={(e) => {
-                    e.preventDefault()
-                    smoothScroll("portfolio")
-                }}
-                className={clsx({ active: activeNav === 'portfolio'})}
-            >portfolio</Link>
-            <Link 
-                to={"#contact"}
-                onClick={(e) => {
-                    e.preventDefault()
-                    smoothScroll("contact")
-                }}
-                className={clsx({ active: activeNav === 'contact'})}
-            >contact</Link>
-        </div>
+                <Link 
+                    to={"#"}
+                    onClick={(e) => {
+                        e.preventDefault()
+                        smoothScroll("#")
+                    }}
+                >
+                    <img id='logo' src={Logo}/>
+                </Link>
+                <Link 
+                    to={"#about"}
+                    onClick={(e) => {
+                        e.preventDefault()
+                        smoothScroll("about")
+                    }}
+                    className={clsx({"active": activeNav === "about"})}
+                >about</Link>
+                <Link 
+                    to={"#experience"}
+                    onClick={(e) => {
+                        e.preventDefault()
+                        smoothScroll("experience")
+                    }}
+                    className={clsx({ active: activeNav === 'experience'})}
+                >experience</Link>
+                <Link 
+                    to={"#portfolio"}
+                    onClick={(e) => {
+                        e.preventDefault()
+                        smoothScroll("portfolio")
+                    }}
+                    className={clsx({ active: activeNav === 'portfolio'})}
+                >portfolio</Link>
+                <Link 
+                    to={"#contact"}
+                    onClick={(e) => {
+                        e.preventDefault()
+                        smoothScroll("contact")
+                    }}
+                    className={clsx({ active: activeNav === 'contact'})}
+                >contact</Link>
+            </div>
+            <div className='menu-bar-hidden'>
+                <div className='logo'>
+                    <Link 
+                        to={"#"}
+                        onClick={(e) => {
+                            e.preventDefault()
+                            smoothScroll("#")
+                        }}
+                    >
+                        <img id='logo' src={Logo}/>
+                    </Link>
+                </div>
+                <div className='navigation'>
+                    <Link 
+                        to={"#about"}
+                        onClick={(e) => {
+                            e.preventDefault()
+                            smoothScroll("about")
+                        }}
+                        className={clsx({"active": activeNav === "about"})}
+                    >about</Link>
+                    <Link 
+                        to={"#experience"}
+                        onClick={(e) => {
+                            e.preventDefault()
+                            smoothScroll("experience")
+                        }}
+                        className={clsx({ active: activeNav === 'experience'})}
+                    >experience</Link>
+                    <Link 
+                        to={"#portfolio"}
+                        onClick={(e) => {
+                            e.preventDefault()
+                            smoothScroll("portfolio")
+                        }}
+                        className={clsx({ active: activeNav === 'portfolio'})}
+                    >portfolio</Link>
+                    <Link 
+                        to={"#contact"}
+                        onClick={(e) => {
+                            e.preventDefault()
+                            smoothScroll("contact")
+                        }}
+                        className={clsx({ active: activeNav === 'contact'})}
+                    >contact</Link>
+                </div>
+            </div>
+        </>
     )
 }

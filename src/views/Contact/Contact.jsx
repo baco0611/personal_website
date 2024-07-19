@@ -152,17 +152,20 @@ export default function Contact() {
                 <div className='left' data-aos="fade-right" data-aos-once="true">
                     <div className='block' title='Click to send me an email'>
                         <a href='mailto:hvnguyenbao0611@gmail.com'><i className="fa-solid fa-envelope"></i> hvnguyenbao0611@gmail.com</a>
+                        <a className='small' href='mailto:hvnguyenbao0611@gmail.com'><i className="fa-solid fa-envelope"></i></a>
                     </div>
                     <div className='block' title='Click to send me a message'>
                         <a href='sms:+817090152570'><i className="fa-regular fa-comment-dots"></i> (+81)70-9015-2570</a>
+                        <a className='small' href='sms:+817090152570'><i className="fa-regular fa-comment-dots"></i></a>
                     </div>
                     <div className='block' title='Click to see my Linkedin account'>
                         <a href="https://www.linkedin.com/in/bao-huynhvannguyen/" target='_blank'><i className="fa-brands fa-linkedin-in"></i> Bao Huynh Van Nguyen</a>
+                        <a className='small' href="https://www.linkedin.com/in/bao-huynhvannguyen/" target='_blank'><i className="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div className='right' data-aos="fade-left" data-aos-once="true">
                     <form ref={form}>
-                        <h1>Contact with me</h1>
+                        <h1>Get in touch with me</h1>
                         <div className='input-box'>
                             <input 
                                 id='form-name'

@@ -3,10 +3,10 @@
 .contact {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 20px;
 
     .left {
-        width: 40%;
+        width: calc(50% - 10px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,7 +29,7 @@
             }
             
             a {
-                font-size: 18px;
+                font-size: 16px;
                 color: $primary-color;
                 width: 100%;
                 height: 100%;
@@ -42,18 +42,24 @@
                     font-size: 20px;
                 }
             }
+
+            .small {
+                display: none;
+            }
         }
     }
 
     .right{
-        width: 55%;
+        // width: 50%;
+        width: calc(50% - 10px);
+
 
         form {
             width: 100%;
 
             h1 {
                 color: $primary-color;
-                font-size: 30px;
+                font-size: 28px;
                 padding-bottom: 15px;
             }
 
@@ -64,9 +70,11 @@
                 border-radius: 10px;
                 padding: 10px;
                 color: $primary-color;
+                font-size: 18px;
 
                 &.message {
-                    height: 200px;
+                    min-height: 200px;
+                    resize: vertical;
                 }
             }
 
@@ -107,6 +115,57 @@
                         color: white;
                         border: 1.5px white solid;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 900px ) {
+    .contact {
+        display: block;
+
+        .left {
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+            padding-bottom: 30px;
+
+            .block {
+                width: auto;
+
+                a {
+                    display: none;
+
+                    &.small {
+                        display: flex !important;
+                        width: 60px;
+                        padding: 0;
+                        align-items: center;
+                        justify-content: center;
+
+                        i {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+
+            form {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .input-box {
+                    width: 100%;
                 }
             }
         }

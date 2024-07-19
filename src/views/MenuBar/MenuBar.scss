@@ -1,6 +1,9 @@
 @import "../../variable.scss";
 
 .menu-bar {
+    position: sticky;
+    top: 10%;
+
     width: 100%;
     padding-right: 20px;
 
@@ -33,5 +36,72 @@
 
     #logo {
         width: min(100%, 150px);
+    }
+}
+
+.menu-bar-hidden {
+    width: 100%;
+    height: 80px;
+    background-color: $base-color;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            height: 70%;
+    
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        align-self: center;
+        gap: 20px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+            font-size: 22px;
+            font-weight: 600;
+    
+            &.active {
+                color: $highlight-color;
+                font-weight: 700;
+                text-decoration: underline 2px solid $highlight-color;
+            }
+    
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .menu-bar-hidden {
+        display: flex;
     }
 }
