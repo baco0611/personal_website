@@ -1,5 +1,13 @@
 @import "../../variable.scss";
 
+.portfolio-comment {
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
 .portfolio {
     display: grid;
     // grid-template-columns: 30% 30% 30%;
@@ -22,7 +30,8 @@
             aspect-ratio: 1200/650;
             object-fit: cover; 
             object-position: center;
-            border: solid transparent 2px;
+            border: solid rgba(255, 255, 255, 0.3) 3px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 
         .text-ellipsis {

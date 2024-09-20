@@ -58,6 +58,7 @@ export default function Portfolio() {
             <SectionHeader
                 section_name="portfolio"
             />
+            <p className='portfolio-comment'>!!! Click on each block for more project details.</p>
             <div className='portfolio'>
             {
                 portfolioList.map((project, index) => {

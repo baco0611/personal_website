@@ -1,2 +1,5 @@
 export {default as error} from "./default.png"
 export {default as classification} from "./classification.png"
+export {default as theRise} from "./theRise.png"
+export {default as ueh} from "./ueh.png"
+export {default as akagoe} from "./akagoe.png"
