@@ -49,8 +49,14 @@ export default function Home() {
                             className='home-navigate' 
                             data-aos="fade-up"
                             data-aos-once="true"
-                        >
-                            <a href='/bao_huynh_resume.pdf' download="Bao_Huynh_resume.pdf">my resume</a>
+                        >  
+                            <p>
+                                my resume 
+                                <a href='/bao_huynh_resume.pdf' download="Bao_Huynh_resume.pdf">(EN)</a>
+                                <a href='/bao_huynh_resume_jp.pdf' download="Bao_Huynh_履歴書.pdf">(JP)</a>
+                            </p>
+                            {/* <a href='/bao_huynh_resume.pdf' download="Bao_Huynh_resume.pdf">my resume (EN)</a> */}
+                            {/* <a href='/bao_huynh_resume_jp.pdf' download="Bao_Huynh_履歴書.pdf">my resume (JP)</a> */}
                             <a href='#contact'>let's connect</a>
                         </div>
                         <div 
