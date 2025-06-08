@@ -1,13 +1,36 @@
 { 
     "experience": [
         {
-            "time": "Mar 2024 - present",
+            "time": "Apr 2025 - present",
+            "company_name": "VTI Japan",
+            "location": "Shinjuku, Tokyo, Japan",
+            position: [
+                {
+                    "position": "Bridge System Engineer",
+                    "time": "Apr 2025 - present",
+                    "content": [
+                    
+                    ]
+                },
+            ]
+        }
+        {
+            "time": "Mar 2024 - Feb 2025",
             "company_name": "Sky-field Corporation",
             "location": "Toshima, Tokyo, Japan",
             "position": [
                 {
+                    "position": "System Engineer Internship",
+                    "time": "Sep 2024 - Feb 2025",
+                    "content": [
+                        "Developed a quantity estimation system to improve the efficiency of quotation calculations for the sales department.",
+                        "Analysed construction drawings to calculate required materials and quantities based on factors such as area and number of windows.",
+                        "Created user-friendly Excel input sheets and analysed execution budgets for each project to support cost estimation."
+                    ]
+                },
+                {
                     "position": "AI Internship",
-                    "time": "Mar 2024 - present",
+                    "time": "Mar 2024 - Sep 2024",
                     "content": [
                         "Better understanding of the process and importance of digital transformation (DX) in the architecture industry, especially in Japan.",
                         "Studying basic computer vision algorithms and automatic image generation models such as DCGAN and MirrorGAN."
