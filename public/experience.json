@@ -6,12 +6,12 @@
       "location": "Shinjuku, Tokyo, Japan",
       "position": [
         {
-          "position": "Bridge System Engineer",
+          "position": "Junior BrSE",
           "time": "Apr 2025 - present",
           "content": [
-            "Acting as a communication bridge between Japanese clients and the Vietnamese development team.",
-            "Participating in system design discussions, requirement analysis, and progress tracking.",
-            "Translating technical documents and clarifying business logic between both sides."
+            "Participating in training on fundamental system development processes, including requirement definition (要件定義), Basic Design (基本設計), and Detailed Design (詳細設計).",
+            "Assisting in interpreting project requirements between Japanese clients and the Vietnamese development team.",
+            "Learning how to prepare basic design documents, understand use cases, and translate specifications into structured design formats."
           ]
         }
       ]
